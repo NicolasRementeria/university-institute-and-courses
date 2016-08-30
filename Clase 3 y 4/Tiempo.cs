@@ -6,30 +6,79 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Tiempo
+    public class Tiempo
     {
-        public int Cantidad;
+        private int _cantidad; // las variables privadas llevan guion bajo al inicio y luego minuscula
 
-        public Tiempo(int cantidad)
+        private Tiempo(int cantidad)
         { // Constructor de Tiempo
-            this.Cantidad = cantidad;
+            this._cantidad = cantidad;
         }
 
         public static Tiempo sumar(Tiempo tiempoAux, int valor)
         { // intento sobrecargar el operador + pero no es la manera
 
-            tiempoAux.Cantidad = tiempoAux.Cantidad + valor;
+            tiempoAux._cantidad = tiempoAux._cantidad + valor;
 
             return tiempoAux;
         }
 
-        public static Tiempo operator +(Tiempo tiempoAux, int valor)
+        /*public static Tiempo operator +(Tiempo tiempoAux, int valor)
         { // intento sobrecargar el operador + pero no es la manera
 
             tiempoAux.Cantidad = tiempoAux.Cantidad + valor;
 
             return tiempoAux;
-        }
-    }
+        }*/
 
+        //CLASE 5, SOBRECARGA DE OPERADORES
+        public static Tiempo operator +(Tiempo tiempoAux, int valor) {
+            tiempoAux._cantidad = tiempoAux._cantidad + valor;
+            return tiempoAux;
+        }
+
+        public static Tiempo operator +(Tiempo tiempo1, Tiempo tiempo2){
+            tiempo1 = tiempo1 + tiempo2._cantidad;
+            return tiempo1;
+        }
+
+        public static Tiempo operator -(Tiempo tiempoAux, int valor){
+            tiempoAux._cantidad = tiempoAux._cantidad - valor;
+            return tiempoAux;
+        }
+
+        public static Tiempo operator -(Tiempo tiempo1, Tiempo tiempo2){
+            tiempo1 = tiempo1 - tiempo2._cantidad;
+            return tiempo1;
+        }
+
+        public static bool operator ==(Tiempo tiempoAux, int valor){
+            return (tiempoAux._cantidad == valor);
+        }
+
+        public static bool operator ==(Tiempo tiempo1, Tiempo tiempo2){
+
+            return(tiempo1._cantidad==tiempo2._cantidad);
+        }
+
+        // FALTA SOBRECARGAR LAS NEGACIONES
+        public static bool operator !=(Tiempo tiempo1, Tiempo tiempo2){
+            return !(tiempo1 == tiempo2);
+        }
+
+        public static bool operator !=(Tiempo tiempoAux, int valor) {
+            return !(tiempoAux._cantidad == valor);
+        }
+         
+        // Sobrecarga explicita o implicita
+        public static implicit operator Tiempo(int numero){
+            return new Tiempo(numero);
+        }
+
+
+        public static explicit operator int(Tiempo tiempo) {
+            return tiempo._cantidad;
+        }
+
+    }
 }

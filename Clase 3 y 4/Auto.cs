@@ -17,8 +17,8 @@ namespace ConsoleApplication2
         public Rueda TI;
         public Rueda TD;
         public static int contadorDeObjetos;
-        public int kilometrosRecorridos; // No es necesario inicializar en el constructor porque se sabe q inicia de 0
-        private int tiempoDemorado;
+        private Kilometro kilometrosRecorridos; // No es necesario inicializar en el constructor porque se sabe q inicia de 0
+        private Tiempo tiempoDemorado;
 
 
         public Auto()
@@ -31,6 +31,7 @@ namespace ConsoleApplication2
             this.TD = new Rueda();
 
             Auto.contadorDeObjetos++;
+
         }
         /* Generar un constructor que reciba un fabricante, pero heredarlo de auto(), para no pasar por otro lugar
            en el contador de objetos */
@@ -41,7 +42,8 @@ namespace ConsoleApplication2
             this.tiempoDemorado = 0;
         }
 
-        public void agregarKilometros(int kilometros)
+        //Deprecated por sobrecarga de metodos
+        /*public void agregarKilometros(int kilometros)
         {
             this.kilometrosRecorridos += kilometros;
         }
@@ -49,7 +51,7 @@ namespace ConsoleApplication2
         {
             this.tiempoDemorado += tiempo;
         }
-        // NO se puede escribir this. en un metodo estatico, es solo para instancias
+        // NO se puede escribir this. en un metodo estatico, es solo para instancias*/
 
 
         public static bool compararAuto(Auto auto1, Auto auto2)
@@ -74,6 +76,18 @@ namespace ConsoleApplication2
         {
             Console.WriteLine("Fabricante es: {0}", this.Fabricante);
         }
+
+        // CLASE 5
+
+        public Tiempo Agregar(Tiempo tiempo) {
+            return this.tiempoDemorado = this.tiempoDemorado + tiempo;
+        }
+
+        public Kilometro Agregar(Kilometro kilometro){
+            return this.kilometrosRecorridos = this.kilometrosRecorridos + kilometro;
+        }
+
+
 
     }
 }

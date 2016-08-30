@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "+Ejercicio 1", "Ejercicio 1\+Ejercicio 1.csproj", "{7B9E8D95-95D0-4658-BBB1-D3177EF84FFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "+Ejercicio 2", "Ejercicio 2\+Ejercicio 2.csproj", "{2B23FE29-CED5-4158-9130-DBB7886F4114}"
@@ -15,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "+Ejercicio 5", "Ejercicio 5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "+Ejercicio 6", "Ejercicio 6\+Ejercicio 6.csproj", "{C6A40971-F4F2-464A-8028-65B980A094FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase 3 y 4", "Clase 3 y 4\Clase 3 y 4.csproj", "{A69DEFED-4142-4553-9D15-95BC992E31D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase 3, 4 y 5", "Clase 3 y 4\Clase 3, 4 y 5.csproj", "{A69DEFED-4142-4553-9D15-95BC992E31D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
