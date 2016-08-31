@@ -1,0 +1,7 @@
+C:\Users\Nicolas\Desktop\UTN C#\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\bin\Debug\VirtualRaceConsola.exe.config
+C:\Users\alumno\Desktop\Nico C Sharp\Clase Constructores Sobrecargas\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\bin\Debug\VirtualRaceConsola.exe.config
+C:\Users\alumno\Desktop\Nico C Sharp\Clase Constructores Sobrecargas\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\bin\Debug\VirtualRaceConsola.exe
+C:\Users\alumno\Desktop\Nico C Sharp\Clase Constructores Sobrecargas\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\bin\Debug\VirtualRaceConsola.pdb
+C:\Users\alumno\Desktop\Nico C Sharp\Clase Constructores Sobrecargas\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\obj\Debug\VirtualRaceConsola.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Nico C Sharp\Clase Constructores Sobrecargas\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\obj\Debug\VirtualRaceConsola.exe
+C:\Users\alumno\Desktop\Nico C Sharp\Clase Constructores Sobrecargas\UTN Villegas Profesor\VirtualRace\VirtualRaceConsola\obj\Debug\VirtualRaceConsola.pdb
