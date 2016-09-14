@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Herencia\bin\Debug\Herencia.exe.config
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Herencia\bin\Debug\Herencia.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Herencia\bin\Debug\Herencia.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Herencia\obj\Debug\Herencia.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Herencia\obj\Debug\Herencia.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Herencia\obj\Debug\Herencia.pdb

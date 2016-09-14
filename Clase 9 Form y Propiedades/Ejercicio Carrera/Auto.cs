@@ -140,5 +140,29 @@ namespace Ejercicio_Carrera
             sb.AppendLine("Piloto: " + this._nombreDelPiloto);
             return sb.ToString();
         }
+
+        public static int OrdenarPorMarcaAsc(Auto auto1, Auto auto2){
+            /*if (auto1.Fabricante.CompareTo){}*/
+            //return string.Compare(auto1.Fabricante.ToString(), auto2.Fabricante.ToString()); //Ordena de forma creciente, de menor letra a mayor
+            
+            return string.Compare(auto1.Fabricante.ToString(), auto2.Fabricante.ToString()); //Ordena de forma decreciente, de mayor letra a menor
+        }
+        public static int OrdenarPorMarcaDesc(Auto auto1, Auto auto2)
+        {
+            return string.Compare(auto2.Fabricante.ToString(), auto1.Fabricante.ToString()); //Ordena de forma decreciente, de mayor letra a menor
+        }
+
+        public static int OrdenarPorPilotoAsc(Auto auto1, Auto auto2)
+        {
+            return string.Compare(auto1.NombrePiloto.ToString(), auto2.NombrePiloto.ToString());
+        }
+
+        public static int OrdenarPorPilotoDesc(Auto auto1, Auto auto2)
+        {
+            return string.Compare(auto2.NombrePiloto.ToString(), auto1.NombrePiloto.ToString());
+        }
+
+         
+
     }
 }

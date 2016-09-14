@@ -26,6 +26,16 @@ namespace CarreraUI
             this.cmbFabricante.SelectedIndex = 1;
             this.cmbFabricante.DropDownStyle = ComboBoxStyle.DropDownList; //Muestra de mejor manera el combo
 
+            this.txtFecha.Text = "30/05/1989";
+            this.txtLugar.Text = "Avellaneda";
+            this.txtNombre.Text = "Nicolas";
+
+            this.gpbAuto.Enabled = false;
+            this.gpbOrdenar.Enabled = false;
+            this.gpbResultado.Enabled = false;
+            this.gpbListadoDeAutos.Enabled = false;
+
+            
         }
 
         private void CargarListado()
@@ -45,6 +55,7 @@ namespace CarreraUI
 
             _miCarrera = new Carrera(this.txtNombre.Text, this.txtFecha.Text, this.txtLugar.Text);
             this.gpbCarrera.Enabled = false;
+            this.gpbAuto.Enabled = true;
 
         }
 
@@ -127,6 +138,10 @@ namespace CarreraUI
             //this._miCarrera.listaDeAutos.Add(autoAuxiliar);
             this._miCarrera = _miCarrera + autoAuxiliar;
             CargarListado();
+
+            this.gpbOrdenar.Enabled = true;
+            this.gpbResultado.Enabled = true;
+            this.gpbListadoDeAutos.Enabled = true;
         }
 
         private void gpbAuto_Enter(object sender, EventArgs e)
@@ -151,6 +166,63 @@ namespace CarreraUI
 
         private void txtCorrerCarrera_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        /*private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            this._miCarrera.listaDeAutos.Sort(Auto.OrdenarPorMarca);
+            this.CargarListado();
+        }*/
+
+        /*private void btnOrdenarPorPiloto_Click(object sender, EventArgs e)
+        {
+            this._miCarrera.listaDeAutos.Sort(Auto.OrdenarPorPiloto);
+            this.CargarListado();
+        }*/
+
+        private void rdbCreciente_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbDecreciente_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbPorFabricanteOPiloto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrdenar_Click_1(object sender, EventArgs e)
+        {
+            if(cmbPorFabricanteOPiloto.SelectedItem.ToString() == "Fabricante" && rdbCreciente.Checked){
+                this._miCarrera.listaDeAutos.Sort(Auto.OrdenarPorMarcaAsc);
+                this.CargarListado();
+            }
+            if (cmbPorFabricanteOPiloto.SelectedItem.ToString() == "Fabricante" && rdbDecreciente.Checked)
+            {
+                this._miCarrera.listaDeAutos.Sort(Auto.OrdenarPorMarcaDesc);
+                this.CargarListado();
+            }
+            if (cmbPorFabricanteOPiloto.SelectedItem.ToString() == "Piloto" && rdbCreciente.Checked)
+            {
+                this._miCarrera.listaDeAutos.Sort(Auto.OrdenarPorPilotoAsc);
+                this.CargarListado();
+            }
+            if (cmbPorFabricanteOPiloto.SelectedItem.ToString() == "Piloto" && rdbDecreciente.Checked)
+            {
+                this._miCarrera.listaDeAutos.Sort(Auto.OrdenarPorPilotoDesc);
+                this.CargarListado();
+            }
+            //REHACER LOS IF, SE PUEDE TRABAJAR CON 2 IF MADRE CON 2 DESVIACIONES SOBRE CRECIENTE O DECRECIENTE CADA UNO
 
         }
 

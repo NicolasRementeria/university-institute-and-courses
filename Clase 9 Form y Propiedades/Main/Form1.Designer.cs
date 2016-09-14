@@ -47,10 +47,16 @@
             this.btnCorrerCarrera = new System.Windows.Forms.Button();
             this.gpbListadoDeAutos = new System.Windows.Forms.GroupBox();
             this.lsbAutos = new System.Windows.Forms.ListBox();
+            this.rdbCreciente = new System.Windows.Forms.RadioButton();
+            this.rdbDecreciente = new System.Windows.Forms.RadioButton();
+            this.gpbOrdenar = new System.Windows.Forms.GroupBox();
+            this.cmbPorFabricanteOPiloto = new System.Windows.Forms.ComboBox();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.gpbCarrera.SuspendLayout();
             this.gpbAuto.SuspendLayout();
             this.gpbResultado.SuspendLayout();
             this.gpbListadoDeAutos.SuspendLayout();
+            this.gpbOrdenar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCrearCarrera
@@ -227,7 +233,7 @@
             // gpbListadoDeAutos
             // 
             this.gpbListadoDeAutos.Controls.Add(this.lsbAutos);
-            this.gpbListadoDeAutos.Location = new System.Drawing.Point(303, 184);
+            this.gpbListadoDeAutos.Location = new System.Drawing.Point(426, 184);
             this.gpbListadoDeAutos.Name = "gpbListadoDeAutos";
             this.gpbListadoDeAutos.Size = new System.Drawing.Size(221, 368);
             this.gpbListadoDeAutos.TabIndex = 4;
@@ -244,11 +250,71 @@
             this.lsbAutos.TabIndex = 0;
             this.lsbAutos.SelectedIndexChanged += new System.EventHandler(this.lsbAutos_SelectedIndexChanged);
             // 
+            // rdbCreciente
+            // 
+            this.rdbCreciente.AutoSize = true;
+            this.rdbCreciente.Location = new System.Drawing.Point(48, 55);
+            this.rdbCreciente.Name = "rdbCreciente";
+            this.rdbCreciente.Size = new System.Drawing.Size(70, 17);
+            this.rdbCreciente.TabIndex = 12;
+            this.rdbCreciente.TabStop = true;
+            this.rdbCreciente.Text = "Creciente";
+            this.rdbCreciente.UseVisualStyleBackColor = true;
+            this.rdbCreciente.CheckedChanged += new System.EventHandler(this.rdbCreciente_CheckedChanged);
+            // 
+            // rdbDecreciente
+            // 
+            this.rdbDecreciente.AutoSize = true;
+            this.rdbDecreciente.Location = new System.Drawing.Point(48, 78);
+            this.rdbDecreciente.Name = "rdbDecreciente";
+            this.rdbDecreciente.Size = new System.Drawing.Size(83, 17);
+            this.rdbDecreciente.TabIndex = 13;
+            this.rdbDecreciente.TabStop = true;
+            this.rdbDecreciente.Text = "Decreciente";
+            this.rdbDecreciente.UseVisualStyleBackColor = true;
+            this.rdbDecreciente.CheckedChanged += new System.EventHandler(this.rdbDecreciente_CheckedChanged);
+            // 
+            // gpbOrdenar
+            // 
+            this.gpbOrdenar.Controls.Add(this.btnOrdenar);
+            this.gpbOrdenar.Controls.Add(this.cmbPorFabricanteOPiloto);
+            this.gpbOrdenar.Controls.Add(this.rdbDecreciente);
+            this.gpbOrdenar.Controls.Add(this.rdbCreciente);
+            this.gpbOrdenar.Location = new System.Drawing.Point(285, 184);
+            this.gpbOrdenar.Name = "gpbOrdenar";
+            this.gpbOrdenar.Size = new System.Drawing.Size(141, 203);
+            this.gpbOrdenar.TabIndex = 5;
+            this.gpbOrdenar.TabStop = false;
+            this.gpbOrdenar.Text = "Ordenar";
+            // 
+            // cmbPorFabricanteOPiloto
+            // 
+            this.cmbPorFabricanteOPiloto.FormattingEnabled = true;
+            this.cmbPorFabricanteOPiloto.Items.AddRange(new object[] {
+            "Fabricante",
+            "Piloto"});
+            this.cmbPorFabricanteOPiloto.Location = new System.Drawing.Point(15, 28);
+            this.cmbPorFabricanteOPiloto.Name = "cmbPorFabricanteOPiloto";
+            this.cmbPorFabricanteOPiloto.Size = new System.Drawing.Size(120, 21);
+            this.cmbPorFabricanteOPiloto.TabIndex = 14;
+            this.cmbPorFabricanteOPiloto.SelectedIndexChanged += new System.EventHandler(this.cmbPorFabricanteOPiloto_SelectedIndexChanged);
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(31, 105);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(87, 36);
+            this.btnOrdenar.TabIndex = 15;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 591);
+            this.ClientSize = new System.Drawing.Size(659, 591);
+            this.Controls.Add(this.gpbOrdenar);
             this.Controls.Add(this.gpbListadoDeAutos);
             this.Controls.Add(this.gpbResultado);
             this.Controls.Add(this.gpbAuto);
@@ -262,6 +328,8 @@
             this.gpbResultado.ResumeLayout(false);
             this.gpbResultado.PerformLayout();
             this.gpbListadoDeAutos.ResumeLayout(false);
+            this.gpbOrdenar.ResumeLayout(false);
+            this.gpbOrdenar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -287,6 +355,11 @@
         private System.Windows.Forms.ListBox lsbAutos;
         private System.Windows.Forms.Button btnCorrerCarrera;
         private System.Windows.Forms.TextBox txtCorrerCarrera;
+        private System.Windows.Forms.RadioButton rdbDecreciente;
+        private System.Windows.Forms.RadioButton rdbCreciente;
+        private System.Windows.Forms.GroupBox gpbOrdenar;
+        private System.Windows.Forms.Button btnOrdenar;
+        private System.Windows.Forms.ComboBox cmbPorFabricanteOPiloto;
     }
 }
 
