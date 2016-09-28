@@ -25,9 +25,12 @@ namespace Habemus_Papa
 
         }
 
-        public Conclave() {
+        private Conclave() { // Era public, le agregue private, ya que uno de los constructores () es privado y el static no puede serlo
             this._cantMaxCardenales = this._cantMaxCardenales + 1;
             this._lugarEleccion = "Capilla Sixtina";
+            _cardenales = new List<Cardenal>(); // Agregado
+            _habemusPapa = false; // Agregado
+
         }
 
         private Conclave(int cantidadCardenales) : this() {
@@ -39,7 +42,7 @@ namespace Habemus_Papa
         }
         #endregion
 
-        private void ContarVotos(Conclave conclave) { 
+        private static void ContarVotos(Conclave conclave) { 
             //Recorrer la lista de cardenales, el que recibe mas votos lo proclama PAPA, coloca true o false en habemus papa
         }
 
@@ -48,6 +51,20 @@ namespace Habemus_Papa
                 return true;
             }
             return false;
+        }
+
+        private string MostrarCardenales()
+        {
+            /*MostrarCardenales (privado): Recorre la lista de Cardenales del cónclave y muestra la información 
+             * de cada cardenal (utilizar el método "Mostrar" de Cardenal)*/
+            StringBuilder sb = new StringBuilder();
+
+            foreach (Cardenal car in this._cardenales){
+                sb.AppendLine(Cardenal.Mostrar(car));
+            }
+
+            return sb.ToString();
+            //Usar StringBuilder para mostrar toda la lista de todos los cardenales
         }
 
         public string Mostrar() {
@@ -60,11 +77,6 @@ namespace Habemus_Papa
             /*Agrear leyenda HABEMUS PAPA mas nombre del mismo con ObtenerNombreYNombrePapal si cabe, 
             sino NO HABEMUS PAPA con la info de todos los cardenales del conclave usando MostrarCardenales*/
             //Ver de usar StringBuilder
-        }
-
-        private string MostrarCardenales() {
-            return "A";
-            //Usar StringBuilder para mostrar toda la lista de todos los cardenales
         }
 
         public static explicit operator bool(Conclave con) {
@@ -100,6 +112,16 @@ namespace Habemus_Papa
             }
             return con;
         }
+
+        public static void VotarPapa(Conclave conclave) { 
+            // EL RANDOM PUEDE ESTAR EN EL CONSTRUCTOR, PARA QUE NO SE USE SIEMPRE EL MISMO
+            /* ind = random(entre 0 u cant de cardenales) < el random va a ser un cardenal *
+             * ___ [ind] ++; < Sumarle un voto
+             */
+        }
+
+
+
 
     }
 }
