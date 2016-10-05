@@ -24,10 +24,33 @@ namespace Entidades
         }
 
         public static string MostrarEstante(Estante est) {
+            Galletita auxGalletita;
+            Gaseosa auxGaseosa;
+            Jugo auxJugo;
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Contenido estante: ");
+            sb.AppendLine("Capacidad " + est._capacidad);
+            sb.AppendLine("Listado de productos: ");
+
             foreach (Producto prod in est.GetProductos()){
                 //usar stringbuilder para guardar la info de cada producto
+                if (prod is Galletita) {
+                    auxGalletita = (Galletita)prod;
+                    sb.AppendLine(Galletita.MostrarGalletita(auxGalletita));
+                }
+                if (prod is Gaseosa)
+                {
+                    auxGaseosa = (Gaseosa)prod;
+                    sb.AppendLine(auxGaseosa.MostrarGaseosa());
+                }
+                if (prod is Jugo)
+                {
+                    auxJugo = (Jugo)prod;
+                    sb.AppendLine(auxJugo.MostrarJugo());
+                }
             }
-            return "";//devolver el stringbuilder
+            return sb.ToString();
         }
 
         public static bool operator ==(Estante est, Producto prod){
@@ -44,17 +67,13 @@ namespace Entidades
         }
 
         public static bool operator +(Estante est, Producto prod) {
-            if ((est.GetProductos().Count() < est._capacidad) && est != prod) {
+            if ((est.GetProductos().Count < est._capacidad) && est != prod) {
+                est.GetProductos().Add(prod);
                 return true;
             }
             return false;
         }
 
-        /*Sustracción (Estante, Producto), retornará un estante sin el producto, siempre y cuando el producto se encuentre en el
-listado. Reutilizar código.
-Sustracción (Estante, ETipoProducto), retornará un estante con todos los productos menos el que coincida con el
-enumerado que recibe como parámetro. Reutilizar código.
-Ejemplo: estanteSinJugo = estante – EtipoProducto.Jugo;*/
 
         public static Estante operator -(Estante est, Producto prod) {
             
@@ -62,9 +81,11 @@ Ejemplo: estanteSinJugo = estante – EtipoProducto.Jugo;*/
                 /*for (int i = 0; i < est.GetProductos().Count() || est.GetProductos()[i] == prod; i++){
                     return est.GetProductos().Remove(est.GetProductos()[i]);
                 }*/
-                for (int i = 0; i < est.GetProductos().Count(); i++){
+                /*for (int i = 0; i < est.GetProductos().Count(); i++){
                     est.GetProductos().RemoveAt(i);
-                }
+                }*/
+                est.GetProductos().Remove(prod);
+
             }
             return est;
         }
@@ -77,7 +98,7 @@ Ejemplo: estanteSinJugo = estante – EtipoProducto.Jugo;*/
                 }
             }*/
 
-            for (int i = 0; i < est.GetProductos().Count(); i++){
+            for (int i = 0; i < est.GetProductos().Count; i++){
                 if ((tipo == ETipoProducto.Galletita) && (est.GetProductos()[i] is Galletita)){
                     est.GetProductos().RemoveAt(i);
                 }
@@ -120,7 +141,12 @@ Ejemplo: estanteSinJugo = estante – EtipoProducto.Jugo;*/
             return aux = 0;
         }*/
 
-        public float GetValorEstante(ETipoProducto tipo) {
+        private float GetValorEstante()
+        {
+            return this.GetValorEstante(ETipoProducto.Todos);
+        }
+
+        /*public float GetValorEstante(ETipoProducto tipo) {
             float aux = 0;
             foreach (Producto item in _productos){
                 if (tipo == ETipoProducto.Galletita && item is Galletita) {
@@ -136,14 +162,50 @@ Ejemplo: estanteSinJugo = estante – EtipoProducto.Jugo;*/
                 }
             }
             return aux;
+        }*/
+        public float GetValorEstante(ETipoProducto tipo)
+        {
+            float valor = 0;
+            foreach (Producto item in this.GetProductos())
+            {
+                switch (tipo)
+                {
+                    case ETipoProducto.Galletita:
+                        if (item is Galletita)
+                            valor += item.Precio;
+                        break;
+                    case ETipoProducto.Gaseosa:
+                        if (item is Gaseosa)
+                            valor += item.Precio;
+                        break;
+                    case ETipoProducto.Jugo:
+                        if (item is Jugo)
+                            valor += item.Precio;
+                        break;
+                    case ETipoProducto.Todos:
+                        valor += item.Precio;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return valor;
         }
 
-        public float ValorEstanteTotal {
+
+
+        /*public float ValorEstanteTotal {
             get {
                 return (GetValorEstante(ETipoProducto.Galletita) + GetValorEstante(ETipoProducto.Gaseosa) + GetValorEstante(ETipoProducto.Jugo));
             }
+        }*/
+        public float ValorEstanteTotal
+        {
+            get
+            {
+                return this.GetValorEstante();
+            }
         }
-
 
     }
 }

@@ -20,7 +20,7 @@ namespace Entidades
         }
 
         public string MostrarGaseosa() {
-            return (MostrarProducto(prod) + "Litros: " + this._litros);
+            return (MostrarProducto(this) + "\nLitros: " + this._litros);
         }
 
 

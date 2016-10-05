@@ -14,8 +14,8 @@ namespace Entidades
             this._peso = peso;
         }
 
-        public string MostrarGalletita(){
-            return (MostrarProducto(prod) + "Peso: " + this._peso);
+        public static string MostrarGalletita(Galletita galleta){
+            return (MostrarProducto(galleta) + "\nPeso: " + galleta._peso);
         }
 
 

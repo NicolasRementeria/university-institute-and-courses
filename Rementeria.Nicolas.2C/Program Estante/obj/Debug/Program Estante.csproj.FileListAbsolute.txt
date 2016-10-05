@@ -1,0 +1,8 @@
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\bin\Debug\Program Estante.exe.config
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\bin\Debug\Program Estante.exe
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\bin\Debug\Program Estante.pdb
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\bin\Debug\Entidades.dll
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\bin\Debug\Entidades.pdb
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\obj\Debug\Program Estante.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\obj\Debug\Program Estante.exe
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Program Estante\obj\Debug\Program Estante.pdb

@@ -15,7 +15,7 @@ namespace Entidades
         }
 
         public string MostrarJugo(){ 
-            return (MostrarProducto(prod) + "Sabor: " ); // Ver como hacer funcionar esta linea
+            return (MostrarProducto(this) + "\nSabor: " + this._sabor.ToString() ); 
         }
 
 

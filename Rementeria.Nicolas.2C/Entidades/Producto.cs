@@ -35,7 +35,7 @@ namespace Entidades
         }
 
         protected static string MostrarProducto(Producto prod){ //o public string
-            return("Marca: " + prod._marca + "Precio: " + prod._precio + "Codigo de barra: " + prod._codigoBarra);
+            return("Marca: " + prod.Marca + "Precio: " + prod.Precio + "Codigo de barra: " + (int)prod);
         }
 
         // EJERCICIO 2
