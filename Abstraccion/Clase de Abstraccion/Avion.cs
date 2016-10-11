@@ -22,9 +22,18 @@ namespace Clase_de_Abstraccion
 
         public float RetornarImpuesto()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return Impuesto;
         }
 
-
+        private float _impuesto = 2;
+        public float Impuesto {
+            get {
+                return _impuesto;
+            }
+            set {
+                _impuesto = value;
+            }
+        }
     }
 }

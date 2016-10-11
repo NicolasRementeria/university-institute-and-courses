@@ -9,5 +9,11 @@ namespace Clase_de_Abstraccion
     public interface IAfip
     {
         float RetornarImpuesto(); //metodo que no tiene accesor de visibilidad
+
+        float Impuesto
+        { // NO puede ser public
+            get;
+            set;
+        }
     }
 }

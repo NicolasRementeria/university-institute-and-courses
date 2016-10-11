@@ -36,8 +36,11 @@ namespace Clase_de_Abstraccion
             foreach (IAfip item in listaIAfip)
             {
                 item.RetornarImpuesto();
+                Console.WriteLine("objeto" + item.GetType().ToString() + "\nimpuesto " + item.Impuesto.ToString());
+                //ver mejor manera de mostrar el tipo del objeto
             }
 
+            Console.ReadKey();
         }
     }
 }

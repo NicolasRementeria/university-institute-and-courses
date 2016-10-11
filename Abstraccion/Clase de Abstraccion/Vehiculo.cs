@@ -11,7 +11,7 @@ namespace Clase_de_Abstraccion
         public string patente;
         public float costo;
 
-        //clases abstractas no deberian tener constructor
+        //clases abstractas no deberian tener constructor?
         public Vehiculo(string patente1) {
             this.patente = patente1;
         }

@@ -22,5 +22,18 @@ namespace Clase_de_Abstraccion
         {
             return 1;
         }
+
+        //******
+
+        private float _impuesto = 1;
+        public float Impuesto {
+            get {
+                return _impuesto;
+            }
+            set {
+                _impuesto = value;
+            }
+        }
+
     }
 }
