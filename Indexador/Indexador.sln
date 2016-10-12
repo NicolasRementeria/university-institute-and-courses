@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab 2 Indexador", "Lab 2 Indexador\Lab 2 Indexador.csproj", "{0E54DC04-90E9-42A5-88AA-4C143DF4FB57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepcion basica", "Excepcion basica\Excepcion basica.csproj", "{716E9A70-826C-4EE9-A7B5-F5555521F9B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{0E54DC04-90E9-42A5-88AA-4C143DF4FB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E54DC04-90E9-42A5-88AA-4C143DF4FB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E54DC04-90E9-42A5-88AA-4C143DF4FB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716E9A70-826C-4EE9-A7B5-F5555521F9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716E9A70-826C-4EE9-A7B5-F5555521F9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716E9A70-826C-4EE9-A7B5-F5555521F9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716E9A70-826C-4EE9-A7B5-F5555521F9B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

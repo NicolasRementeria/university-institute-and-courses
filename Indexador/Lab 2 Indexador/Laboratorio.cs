@@ -16,7 +16,7 @@ namespace Lab_2_Indexador
             this.listaDePC = new List<PC>();
         }
 
-        //INDEXADOR
+        //INDEXADOR PARA TRATAR A LA CLASE COMO ARRAY
         public PC this[int indice] {
             get {
                 //validar la cantidad de elementos, para que si el largo es de 5 elementos y el indice dado es > 5, no pinche
