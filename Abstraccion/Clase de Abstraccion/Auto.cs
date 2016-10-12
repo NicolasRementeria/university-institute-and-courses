@@ -9,6 +9,9 @@ namespace Clase_de_Abstraccion
     public abstract class Auto : Vehiculo
     {
         public Auto(string patente) : base(patente){}
+        //***
+        public Auto(float costo) : base(costo) { }
+        //***
 
         public int cantidadDePuertas;
 

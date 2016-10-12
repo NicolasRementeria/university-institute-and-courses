@@ -9,8 +9,12 @@ namespace Clase_de_Abstraccion
     public class Deportivo : Auto, IAfip
     {
 
-        public Deportivo(string patente) : base(patente) { 
-        }
+        public Deportivo(string patente) : base(patente) { }
+
+        //***
+        public Deportivo(float costo) : base(costo) { }
+
+        //***
         public override float CalcularCosto() // Esta llamando de vehiculo
         {
             //throw new NotImplementedException();
