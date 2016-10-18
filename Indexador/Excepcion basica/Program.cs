@@ -8,74 +8,68 @@ namespace Excepcion_basica
 {
     class Program
     {
-        public static void Operar()
-        {
-            string dato;
-            int numero;
-
-            try
-            {
-                dato = Console.ReadLine();
-                numero = int.Parse(dato);
-                numero = numero / numero;
-            }
-            catch (Exception ex)
-            {
-                //Dado en la clase: Operaciones para guardar informacion de la excepcion
-                
-
-                throw new Exception("Se quedo sin internet"); //Fuerza la excepcion
-            }
-        }
-
-        public static void LanzarError() {
-            throw new Exception("Se quedò sin memoria RAM"); //El throw no necesita try
-        }
-        //Dividir sistema que uno muestre mensaje y otra muestre error, o todo en uno
-
         static void Main(string[] args)
         {
-            //string dato;
-            //int numero;
+            Carrera miNuevaCarrera = new Carrera("Autodromo Test");
+            //miNuevaCarrera.CorrerCarrera();
+
+            Auto miNuevoAuto = new Auto("Marca test", 5);
+            //miNuevoAuto.Andar();
+
+            Auto Auto1 = new Auto("Ford", 5);
+            Auto1.listadoDeRuedas.Add(new Rueda("Rueda 1 Auto 1"));
+            Auto1.listadoDeRuedas.Add(new Rueda("Rueda 2 Auto 1"));
+            Auto1.listadoDeRuedas.Add(new Rueda("Rueda 3 Auto 1"));
+            Auto1.listadoDeRuedas.Add(new Rueda("Rueda 4 Auto 1"));
+
+            Auto Auto2 = new Auto("Chevrolet", 5);
+            Auto2.listadoDeRuedas.Add(new Rueda("Rueda 1 Auto 2"));
+            Auto2.listadoDeRuedas.Add(new Rueda("Rueda 2 Auto 2"));
+            Auto2.listadoDeRuedas.Add(new Rueda("Rueda 3 Auto 2"));
+            Auto2.listadoDeRuedas.Add(new Rueda("Rueda 4 Auto 2"));
+
+            Auto Auto3 = new Auto("Fiat", 5);
+            Auto3.listadoDeRuedas.Add(new Rueda("Rueda 1 Auto 3"));
+            Auto3.listadoDeRuedas.Add(new Rueda("Rueda 2 Auto 3"));
+            Auto3.listadoDeRuedas.Add(new Rueda("Rueda 3 Auto 3"));
+            Auto3.listadoDeRuedas.Add(new Rueda("Rueda 4 Auto 3"));
+
+            Auto Auto4 = new Auto("Porche", 5);
+            Auto4.listadoDeRuedas.Add(new Rueda("Rueda 1 Auto 4"));
+            Auto4.listadoDeRuedas.Add(new Rueda("Rueda 2 Auto 4"));
+            Auto4.listadoDeRuedas.Add(new Rueda("Rueda 3 Auto 4"));
+            Auto4.listadoDeRuedas.Add(new Rueda("Rueda 4 Auto 4"));
+
+            miNuevaCarrera.listaDeAutos.Add(Auto1);
+            miNuevaCarrera.listaDeAutos.Add(Auto2);
+            miNuevaCarrera.listaDeAutos.Add(Auto3);
+            miNuevaCarrera.listaDeAutos.Add(Auto4);
+
+
 
             try
             {
-                //Solamente se pone lo que puede dar error
-                /*Pegado en el metodo static abajo
-                 * dato = Console.ReadLine();
-                numero = int.Parse(dato);
-                numero = numero / numero;
-                 * */
-                LanzarError(); // Muestra de una que no hay ram, se va del try luego de ejecutarse
-                Operar();
+                miNuevaCarrera.CorrerCarrera();
             }
-
-            catch (FormatException ex)
+            catch (AutoException fe)
             {
-                Console.Write("Error de formato: " + ex.Message);
+                Console.WriteLine(fe.Message + " " + fe.textoHoraDeLaExcepcion);
             }
-            catch (DivideByZeroException ex)
+            catch (PinchaduraException fe)
             {
-                Console.Write("No se puede dividir por 0: " + ex.Message);
+                Console.WriteLine(fe.Message + " " + fe.textoHoraDeLaExcepcion);
             }
-            catch (Exception ex) //nombre de la excepcion ex
+            catch (MiExcepcion fe)
             {
-                //si ocurre un error, viene al catch
-                //siempre devuelve un objeto de tipo exception
-
-                Console.Write("General: " + ex.Message);
-
-                //throw; // << sacar
+                Console.WriteLine(fe.Message + " " + fe.textoHoraDeLaExcepcion);
             }
-            finally{ // < Luego de todos los catch, siempre se ejecuta el finally
-                //Se usa para liberar recursos o mostrar un mensaje final
-
+            catch (Exception fe)
+            {
+                Console.WriteLine(fe.Message + " " + DateTime.Now);
             }
-            //LanzarError(); // Va al error donde cayo en la linea
             Console.ReadKey();
 
         }
-        
     }
     
 
@@ -87,3 +81,7 @@ namespace Excepcion_basica
 //La idea es tener un solo catch que capture un error definido por mi
 //Si se le ingresa un alumno a una persona, podes tomar los datos de alumno y agregarlos a program
 //Las excepciones son errores pero tambien objetos que se pueden burbujear
+
+
+
+

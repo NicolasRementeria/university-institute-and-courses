@@ -3,3 +3,9 @@ C:\Users\alumno\Desktop\Indexador\Indexador\Excepcion basica\bin\Debug\Excepcion
 C:\Users\alumno\Desktop\Indexador\Indexador\Excepcion basica\bin\Debug\Excepcion basica.pdb
 C:\Users\alumno\Desktop\Indexador\Indexador\Excepcion basica\obj\Debug\Excepcion basica.exe
 C:\Users\alumno\Desktop\Indexador\Indexador\Excepcion basica\obj\Debug\Excepcion basica.pdb
+C:\Users\alumno\Desktop\Excepciones\Indexador\Excepcion basica\bin\Debug\Excepcion basica.exe.config
+C:\Users\alumno\Desktop\Excepciones\Indexador\Excepcion basica\obj\Debug\Excepcion basica.exe
+C:\Users\alumno\Desktop\Excepciones\Indexador\Excepcion basica\obj\Debug\Excepcion basica.pdb
+C:\Users\alumno\Desktop\Excepciones\Indexador\Excepcion basica\bin\Debug\Excepcion basica.exe
+C:\Users\alumno\Desktop\Excepciones\Indexador\Excepcion basica\bin\Debug\Excepcion basica.pdb
+C:\Users\alumno\Desktop\Excepciones\Indexador\Excepcion basica\obj\Debug\Excepcion basica.csprojResolveAssemblyReference.cache
