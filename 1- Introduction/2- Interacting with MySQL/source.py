@@ -1,17 +1,17 @@
 import mysql.connector
 
 con = mysql.connector.connect(
-user = "ardit700_student",
-password = "ardit700_student",
-host = "108.167.140.122",
-database = "ardit700_pm1database"
+user = "ReaderUser",
+password = "reader",
+host = "localhost",
+database = "thesaurus_schema"
 )
 
 cursor = con.cursor()
 
 word=input("Enter the word: ")
 
-query = cursor.execute("SELECT Definition FROM Dictionary WHERE Expression = '%s'" % word)
+query = cursor.execute("SELECT Definition FROM thesaurus_table WHERE Expression = '%s'" % word)
 results = cursor.fetchall()
 
 if results:
@@ -19,3 +19,9 @@ if results:
         print(result[0])
 else:
     print("No word found!")
+
+# Get all users
+# SELECT user FROM mysql.user;
+
+# Remove an user
+# DROP USER ReaderUser@localhost;

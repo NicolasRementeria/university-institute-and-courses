@@ -12,6 +12,10 @@ Resolving Root password change issue:
 
 https://phoenixnap.com/kb/how-to-reset-mysql-root-password-windows-linux
 
+Troubleshoot "secure-file-priv" (spanish)
+
+https://stackoverrun.com/es/q/9019205
+
 # Kubernetes Local DB:
 
 https://www.serverlab.ca/tutorials/containers/kubernetes/how-to-deploy-mysql-server-5-7-to-kubernetes/
