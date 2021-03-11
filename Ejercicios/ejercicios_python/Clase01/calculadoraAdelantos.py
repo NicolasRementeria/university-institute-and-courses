@@ -2,6 +2,8 @@
 
 # https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/01_Introduccion/03_Numeros.md#ejercicio-111-bonus
 
+# Ejercicio 1.9
+
 # ¿Cuánto pagaría David si agrega $1000 por mes durante cuatro años, comenzando en el sexto año de la hipoteca (es decir, luego de 5 años)?
 
 # Modificá tu programa ("adelantos.py") de forma que la información sobre pagos extras sea incorporada de manera versátil. Agregá las siguientes variables antes del ciclo, para definir el comienzo, fin y monto de los pagos extras:
@@ -9,7 +11,6 @@
 # pago_extra_mes_fin = 108
 # pago_extra = 1000
 
-# Ejercicio 1.9
 
 saldo = 500000.0
 tasa = 0.05

@@ -1,5 +1,9 @@
 # tablas.py
 
+# https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/01_Introduccion/03_Numeros.md#ejercicio-111-bonus
+
+# Ejercicio 1.10
+
 # Modicá tu programa para que imprima una tabla mostrando el mes, el total pagado hasta el momento y el saldo restante. La salida debería verse aproximadamente así:
 # 
 # 1 2684.11 499399.22
@@ -14,7 +18,7 @@
 # Total pagado:  880074.1
 # Meses:  310
 
-# Ejercicio 1.10
+
 
 saldo = 500000.0
 tasa = 0.05

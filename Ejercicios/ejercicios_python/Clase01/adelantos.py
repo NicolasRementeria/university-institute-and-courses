@@ -2,12 +2,13 @@
 
 # https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/01_Introduccion/03_Numeros.md#ejercicio-111-bonus
 
+# Ejercicio 1.8
 
 # Supongamos que David adelanta pagos extra de $1000/mes durante los primeros 12 meses de la hipoteca.
 # Modificá el programa ("hipoteca.py") para incorporar estos pagos extra y que imprima el monto total pagado junto con la cantidad de meses requeridos.
 # Cuando lo corras, este nuevo programa debería dar un pago total de 929965.62 en 342 meses.
 
-# Ejercicio 1.8
+
 
 saldo = 500000.0
 tasa = 0.05

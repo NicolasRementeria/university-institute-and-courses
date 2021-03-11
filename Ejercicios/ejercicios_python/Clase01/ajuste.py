@@ -2,10 +2,12 @@
 
 # https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/01_Introduccion/03_Numeros.md#ejercicio-111-bonus
 
+# Ejercicio 1.11
+
 # corregí el código anterior de forma que el pago del último mes se ajuste a lo adeudado.
 # Asegurate de guardar en el archivo hipoteca.py esta última versión en tu directorio ejercicios_python/Clase01/. Vamos a volver a trabajar con él.
 
-# Ejercicio 1.11
+
 
 
 saldo = 500000.0
