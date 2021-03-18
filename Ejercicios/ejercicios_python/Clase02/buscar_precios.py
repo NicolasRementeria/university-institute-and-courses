@@ -16,7 +16,7 @@ import csv
 
 def buscar_precio(fruta):
     precio = 0
-    with open('../Data/precios.csv', 'rt') as csv_file:
+    with open('../Data/precios.csv', 'r') as csv_file:
         csv_content = csv.reader(csv_file)
         for item in csv_content:
             nombre_csv = item[0]
