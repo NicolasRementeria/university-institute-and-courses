@@ -67,7 +67,6 @@ def costo_camion(csv_file):
     file_content = csv.reader(raw_file)
     next(file_content) # Remove first item of csv, that will remove the headers
     for item in file_content:
-        nombre_item = item[0]
         cajones_item = item[1]
         if cajones_item == "":
             cajones_item = 0

@@ -130,7 +130,6 @@ def costo_camion(csv_file):
     file_content = csv.reader(raw_file)
     next(file_content) # Remove first item of csv, that will remove the headers
     for item in file_content:
-        nombre_item = item[0]
         cajones_item = int(item[1])
         precio_item = float(item[2])
         costo_total += cajones_item * precio_item
