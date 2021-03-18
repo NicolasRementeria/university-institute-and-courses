@@ -342,17 +342,63 @@ def leer_precios(nombre_archivo):
                 continue
     return diccionario_precios
 
+def costo_camion(csv_file):
+    costo_total = 0
+    raw_file = open(csv_file, "r")
+    file_content = csv.reader(raw_file)
+    next(file_content) # Remove first item of csv, that will remove the headers
+    for item in file_content:
+        cajones_item = int(item[1])
+        precio_item = float(item[2])
+        costo_total += cajones_item * precio_item
+    raw_file.close()
+    return costo_total
 
-def obtener_precios_compra():
+def buscar_precio(fruta):
+    precio = 0
+    with open('../Data/precios.csv', 'r') as csv_file:
+        csv_content = csv.reader(csv_file)
+        for item in csv_content:
+            nombre_csv = item[0]
+            precio_csv = item[1]
+            if nombre_csv == fruta:
+                precio = precio_csv
+        return float(precio)
 
-def obtener_precios_venta():
+def calculo_venta(fruta, cajones):
+    valor_total = 0
+    precio_fruta = buscar_precio(fruta)
+    valor_total = precio_fruta * cajones
+    return valor_total
 
-lista_camion = leer_camion('../Data/camion.csv')
-lista_nombres_productos_comprados = []
+def nombre_productos_comprados(productos):
+    nombre_productos = []
+    for producto in productos:
+        nombre_productos.append(producto["nombre"])
+    return nombre_productos
 
-for item in lista_camion:
-    lista_nombres_productos_comprados.append(item["nombre"])
+def obtener_cajones(fruta, camion):
+    cajones = 0
+    for item in camion:
+        if item["nombre"] == fruta:
+            cajones = item["cajones"]
+            break
+    return cajones
 
-costo_de_camion
-recaudacion
-diferencia
+path_camion = '../Data/camion.csv'
+path_precios_venta = '../Data/precios.csv'
+
+camion = leer_camion(path_camion)
+productos_comprados = nombre_productos_comprados(camion)
+
+costo_de_camion = costo_camion(path_camion)
+
+recaudacion = 0
+for producto in productos_comprados:
+    recaudacion += calculo_venta(producto, obtener_cajones(producto, camion))
+
+diferencia = recaudacion - costo_de_camion
+
+mensaje = f"Costo de Camion: {costo_de_camion} | Recaudacion: {recaudacion} | Ganancia: {diferencia:.2f}"
+
+print(mensaje)
