@@ -365,37 +365,18 @@ def buscar_precio(fruta):
                 precio = precio_csv
         return float(precio)
 
-def calculo_venta(fruta, cajones):
-    valor_total = 0
-    precio_fruta = buscar_precio(fruta)
-    valor_total = precio_fruta * cajones
-    return valor_total
-
-def nombre_productos_comprados(productos):
-    nombre_productos = []
-    for producto in productos:
-        nombre_productos.append(producto["nombre"])
-    return nombre_productos
-
-def obtener_cajones(fruta, camion):
-    cajones = 0
-    for item in camion:
-        if item["nombre"] == fruta:
-            cajones = item["cajones"]
-            break
-    return cajones
 
 path_camion = '../Data/camion.csv'
 path_precios_venta = '../Data/precios.csv'
 
 camion = leer_camion(path_camion)
-productos_comprados = nombre_productos_comprados(camion)
 
 costo_de_camion = costo_camion(path_camion)
 
 recaudacion = 0
-for producto in productos_comprados:
-    recaudacion += calculo_venta(producto, obtener_cajones(producto, camion))
+for producto in camion:
+    recaudacion += buscar_precio(producto["nombre"]) * producto["cajones"]
+
 
 diferencia = recaudacion - costo_de_camion
 
