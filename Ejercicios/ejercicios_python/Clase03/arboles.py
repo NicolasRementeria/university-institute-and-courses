@@ -458,22 +458,28 @@ def obtener_inclinaciones(lista_arboles, especie):
             lista_inclinaciones.append(float(arbol["inclinacio"]))
     return lista_inclinaciones
 
+# def especimen_mas_inclinado(lista_arboles):
+#     dicc_inclinaciones = {}
+#     for arbol in lista_arboles:
+#         if arbol["nombre_com"] not in dicc_inclinaciones.keys():
+#             dicc_inclinaciones[arbol["nombre_com"]] = arbol["inclinacio"]
+#         elif arbol["nombre_com"] in dicc_inclinaciones.keys() and arbol["inclinacio"] > dicc_inclinaciones[arbol["nombre_com"]]:
+#             dicc_inclinaciones[arbol["nombre_com"]] = arbol["inclinacio"]
+#     mayor_inclinacion = ["", 0]
+#     for nombre_arbol in list(dicc_inclinaciones.keys()):
+#         inclinacion = dicc_inclinaciones[nombre_arbol]
+#         if inclinacion > mayor_inclinacion[1]:
+#             mayor_inclinacion[0] = nombre_arbol
+#             mayor_inclinacion[1] = inclinacion
+#     return mayor_inclinacion
 
-# Rehacer especimen_man_inclinado(lista_arboles) usando obtener_inclinaciones(lista_arboles, especie)
 def especimen_mas_inclinado(lista_arboles):
-    dicc_inclinaciones = {}
-    for arbol in lista_arboles:
-        if arbol["nombre_com"] not in dicc_inclinaciones.keys():
-            dicc_inclinaciones[arbol["nombre_com"]] = arbol["inclinacio"]
-        elif arbol["nombre_com"] in dicc_inclinaciones.keys() and arbol["inclinacio"] > dicc_inclinaciones[arbol["nombre_com"]]:
-            dicc_inclinaciones[arbol["nombre_com"]] = arbol["inclinacio"]
     mayor_inclinacion = ["", 0]
-    for nombre_arbol in list(dicc_inclinaciones.keys()):
-        inclinacion = dicc_inclinaciones[nombre_arbol]
-        if inclinacion > mayor_inclinacion[1]:
-            mayor_inclinacion[0] = nombre_arbol
-            mayor_inclinacion[1] = inclinacion
-    return mayor_inclinacion
+    for arbol in lista_arboles:
+        if max(obtener_inclinaciones(lista_arboles, arbol["nombre_com"])) > mayor_inclinacion[1]:
+            mayor_inclinacion[0] = arbol["nombre_com"]
+            mayor_inclinacion[1] = max(obtener_inclinaciones(lista_arboles, arbol["nombre_com"]))
+    return mayor_inclinacion    
 
 def especie_promedio_mas_inclinada(lista_arboles):
     inclinaciones_por_arbol = {}
