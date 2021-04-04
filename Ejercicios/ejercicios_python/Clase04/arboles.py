@@ -111,10 +111,39 @@ lista_tuplas_alturas_y_diametro_jacaranda = [(float(arbol['altura_tot']), float(
 especies = ['Eucalipto', 'Palo borracho rosado', 'Jacarandá']
 
 def medidas_de_especies(especies,arboleda):
+    '''Version mas legible, creando un record en cada paso del bucle for, y usando metodo 
+    ".update() para actualizar el diccionario"'''
     dicc_medidas = {}
     for especie in especies:
         record = {especie: [(float(arbol['altura_tot']), float(arbol['diametro'])) for arbol in arboleda if arbol["nombre_com"] == especie]}
         dicc_medidas.update(record)
     return dicc_medidas
 
+def medidas_de_especies2(especies,arboleda):
+    '''Otra forma de crear el registro'''
+  dicc_medidas={}  
+  for especie in especies:
+    registro=[(float(arbol['altura_tot']), float(arbol['diametro'])) for arbol in arboleda if arbol['nombre_com']==especie]
+    dicc_medidas[especie]=registro
+  return dicc_medidas
+
+def medidas_de_especies3(especies,arboleda):
+    '''Simil Oneliner, sin creacion de registro, pero aun con un for que recorre cada especie'''
+    dicc_medidas = {}
+    for especie in especies:
+        dicc_medidas = {dicc_medidas[especie]: [(float(arbol['altura_tot']), float(arbol['diametro'])) for arbol in arboleda if arbol["nombre_com"] == especie]}
+    return dicc_medidas
+
+def medidas_de_especies4(especies,arboleda):
+    '''Oneliner completo'''
+    dicc_medidas = {dicc_medidas[especie]: [(float(arbol['altura_tot']), float(arbol['diametro'])) for arbol in arboleda for especie in especies if arbol["nombre_com"] == especie]}
+    return dicc_medidas
+
+
 medidas = medidas_de_especies(especies, arboleda)
+
+medidas2 = medidas_de_especies2(especies, arboleda)
+
+medidas3 = medidas_de_especies2(especies, arboleda)
+
+medidas4 = medidas_de_especies2(especies, arboleda)
