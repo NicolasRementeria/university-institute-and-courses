@@ -400,6 +400,8 @@
 
 # https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/03_Datos/06_Arboles1.md#ejercicio-324-especie-m%C3%A1s-inclinada-en-promedio
 
+# %%
+
 import csv
 from pprint import pprint
 from collections import Counter
@@ -532,3 +534,4 @@ inclinacion_promedio_centenerio = especie_promedio_mas_inclinada(arboles_centena
 print(f"General Paz | Inclinaciones Promedio  del arbol mas inclinado: Nombre = {inclinacion_promedio_general_paz[0]}, Promedio = {inclinacion_promedio_general_paz[1]}")
 print(f"Los Andes | Inclinaciones Promedio del arbol mas inclinado: Nombre = {inclinacion_promedio_los_andes[0]}, Promedio = {inclinacion_promedio_los_andes[1]}")
 print(f"Centenario | Inclinaciones  del arbol mas inclinado: Nombre = {inclinacion_promedio_centenerio[0]}, Promedio = {inclinacion_promedio_centenerio[1]}")
+# %%
