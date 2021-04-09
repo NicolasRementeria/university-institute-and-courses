@@ -187,3 +187,22 @@ plt.ylabel("Cantidad de figuritas pegadas.")
 plt.title("La curva de llenado se desacelera al final")
 plt.show()
 
+############
+
+# Ejercicio 5.19:
+
+# https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/05_Random_Plt_Dbg/03_Figuritas.md#ejercicio-519
+
+
+#################################
+
+
+############
+
+# Ejercicio 5.20: Plotear el histograma
+
+# https://github.com/python-unsam/Programacion_en_Python_UNSAM/blob/master/Notas/05_Random_Plt_Dbg/03_Figuritas.md#ejercicio-520-plotear-el-histograma
+
+
+plt.hist(calcular_historia_figus_pegadas(figus_total, figus_paquete), bins=200)
+plt.show()
