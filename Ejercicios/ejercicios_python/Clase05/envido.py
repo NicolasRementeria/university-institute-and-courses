@@ -21,7 +21,7 @@ from collections import Counter
 
 def se_puede_cantar_envido(mano):
     tipos_distintos = list(set([carta[1] for carta in mano]))
-    if len(tipos_distintos) >= 2:
+    if len(tipos_distintos) <= 2:
         return True
     else:
         return False
@@ -82,7 +82,7 @@ def probar_envido_31():
     mano = obtener_mano(naipes)
     return es_envido_31(mano)
 
-N = 10000
+N = 1000000
 G = sum([probar_envido_31() for i in range(N)])
 prob = G/N
 print(f'Probé {N} veces a jugar una mano en {N} mazos nuevos, de las cuales {G} saqué envido 31')
@@ -113,7 +113,7 @@ def probar_envido_32():
     mano = obtener_mano(naipes)
     return es_envido_32(mano)
 
-N = 10000
+N = 1000000
 G = sum([probar_envido_32() for i in range(N)])
 prob = G/N
 print(f'Probé {N} veces a jugar una mano en {N} mazos nuevos, de las cuales {G} saqué envido 32')
@@ -142,7 +142,7 @@ def probar_envido_33():
     mano = obtener_mano(naipes)
     return es_envido_33(mano)
 
-N = 10000
+N = 1000000
 G = sum([probar_envido_33() for i in range(N)])
 prob = G/N
 print(f'Probé {N} veces a jugar una mano en {N} mazos nuevos, de las cuales {G} saqué envido 33')
