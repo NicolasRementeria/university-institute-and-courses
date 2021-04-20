@@ -59,7 +59,6 @@ def busqueda_binaria(lista, x, verbose = False):
     pos = -1 # Inicializo respuesta, el valor no fue encontrado
     izq = 0
     der = len(lista) - 1
-    comps_tot = 0
     while izq <= der:
         medio = (izq + der) // 2
         if verbose:
