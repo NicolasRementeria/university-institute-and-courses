@@ -13,6 +13,8 @@ int main()
     printf("Ingrese un numero de hasta 5 cifras: ");
     scanf("%d", &numero);
 
+    // NOTA: tomar el valor absoluto para contemplar el valor negativo
+
     if (numero >= 10000 && numero <= 99999){
         //El numero tiene 5 digitos
         decena_de_mil = (int)(numero / 10000);
@@ -61,7 +63,7 @@ int main()
     }
     else{
         //El numero tiene 1 digito
-        printf("El numero %d no puede ser capicua!", numero);
+        printf("El numero %d al ser de un digito es capicua!", numero);
     }
 
     return 0;
