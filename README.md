@@ -1,1 +1,0 @@
-# INSPT-Programacion-1
