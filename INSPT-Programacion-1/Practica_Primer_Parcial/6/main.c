@@ -144,7 +144,7 @@ void Procesar_Alumno(int *n_notas_total, int anio, int legajo, int *sumatoria_no
 {
     (*n_notas_total)++;
     *division = Procesar_Division(anio, legajo);
-    Procesar_Nota(anio, legajo, *&division, *&sumatoria_notas_A, *&sumatoria_notas_B, *&sumatoria_notas_C, *&n_notas_A, *&n_notas_B, *&n_notas_C);
+    Procesar_Nota(anio, legajo, division, sumatoria_notas_A, sumatoria_notas_B, sumatoria_notas_C, n_notas_A, n_notas_B, n_notas_C);
 }
 
 void Calcular_Mayor_Promedio(int anio, int *anio_mayor_promedio, char division, char *division_mayor_promedio, float promedio_nota_A, float promedio_nota_B, float promedio_nota_C, float *mayor_promedio)
