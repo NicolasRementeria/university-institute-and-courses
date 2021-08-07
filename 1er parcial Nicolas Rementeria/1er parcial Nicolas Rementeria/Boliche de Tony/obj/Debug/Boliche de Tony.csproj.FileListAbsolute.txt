@@ -1,8 +1,0 @@
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\bin\Debug\Boliche de Tony.exe.config
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\bin\Debug\Boliche de Tony.exe
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\bin\Debug\Boliche de Tony.pdb
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\obj\Debug\Boliche de Tony.csprojResolveAssemblyReference.cache
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\obj\Debug\Boliche de Tony.exe
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\obj\Debug\Boliche de Tony.pdb
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\bin\Debug\Entidades.dll
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Boliche de Tony\bin\Debug\Entidades.pdb

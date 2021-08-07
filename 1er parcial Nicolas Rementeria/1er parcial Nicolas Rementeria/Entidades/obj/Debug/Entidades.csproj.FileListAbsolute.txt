@@ -1,5 +1,0 @@
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Entidades\bin\Debug\Entidades.dll
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Entidades\bin\Debug\Entidades.pdb
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Entidades\obj\Debug\Entidades.dll
-D:\1er parcial Nicolas Rementeria\1er parcial Nicolas Rementeria\Entidades\obj\Debug\Entidades.pdb
