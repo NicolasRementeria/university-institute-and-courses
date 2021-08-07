@@ -1,0 +1,12 @@
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Ejercicio Carrera\bin\Debug\Ejercicio Carrera.exe.config
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Ejercicio Carrera\bin\Debug\Ejercicio Carrera.exe
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Ejercicio Carrera\bin\Debug\Ejercicio Carrera.pdb
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Ejercicio Carrera\obj\Debug\Ejercicio Carrera.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Ejercicio Carrera\obj\Debug\Ejercicio Carrera.exe
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Ejercicio Carrera\obj\Debug\Ejercicio Carrera.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Ejercicio Carrera\bin\Debug\Ejercicio Carrera.exe.config
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Ejercicio Carrera\bin\Debug\Ejercicio Carrera.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Ejercicio Carrera\bin\Debug\Ejercicio Carrera.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Ejercicio Carrera\obj\Debug\Ejercicio Carrera.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Ejercicio Carrera\obj\Debug\Ejercicio Carrera.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Ejercicio Carrera\obj\Debug\Ejercicio Carrera.pdb

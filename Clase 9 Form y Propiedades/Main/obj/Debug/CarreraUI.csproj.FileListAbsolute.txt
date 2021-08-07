@@ -1,0 +1,22 @@
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.Form1.resources
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.csproj.GenerateResource.Cache
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\bin\Debug\Ejercicio Carrera.exe
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\bin\Debug\Ejercicio Carrera.pdb
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\bin\Debug\CarreraUI.exe.config
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\bin\Debug\CarreraUI.exe
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\bin\Debug\CarreraUI.pdb
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.Properties.Resources.resources
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.exe
+C:\Users\Nicolas\Desktop\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\bin\Debug\CarreraUI.exe.config
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\bin\Debug\CarreraUI.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\bin\Debug\CarreraUI.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\bin\Debug\Ejercicio Carrera.exe
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\bin\Debug\Ejercicio Carrera.pdb
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.Form1.resources
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.Properties.Resources.resources
+C:\Users\alumno\Desktop\Clase 9\Clase 9 Form y Propiedades\Main\obj\Debug\CarreraUI.csproj.GenerateResource.Cache
