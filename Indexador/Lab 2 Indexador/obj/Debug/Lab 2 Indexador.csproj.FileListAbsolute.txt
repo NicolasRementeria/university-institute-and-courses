@@ -1,0 +1,12 @@
+C:\Users\alumno\Desktop\Indexador\Indexador\Lab 2 Indexador\bin\Debug\Lab 2 Indexador.exe.config
+C:\Users\alumno\Desktop\Indexador\Indexador\Lab 2 Indexador\bin\Debug\Lab 2 Indexador.exe
+C:\Users\alumno\Desktop\Indexador\Indexador\Lab 2 Indexador\bin\Debug\Lab 2 Indexador.pdb
+C:\Users\alumno\Desktop\Indexador\Indexador\Lab 2 Indexador\obj\Debug\Lab 2 Indexador.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Indexador\Indexador\Lab 2 Indexador\obj\Debug\Lab 2 Indexador.exe
+C:\Users\alumno\Desktop\Indexador\Indexador\Lab 2 Indexador\obj\Debug\Lab 2 Indexador.pdb
+C:\Users\alumno\Desktop\Excepciones\Indexador\Lab 2 Indexador\bin\Debug\Lab 2 Indexador.exe.config
+C:\Users\alumno\Desktop\Excepciones\Indexador\Lab 2 Indexador\bin\Debug\Lab 2 Indexador.exe
+C:\Users\alumno\Desktop\Excepciones\Indexador\Lab 2 Indexador\bin\Debug\Lab 2 Indexador.pdb
+C:\Users\alumno\Desktop\Excepciones\Indexador\Lab 2 Indexador\obj\Debug\Lab 2 Indexador.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Excepciones\Indexador\Lab 2 Indexador\obj\Debug\Lab 2 Indexador.exe
+C:\Users\alumno\Desktop\Excepciones\Indexador\Lab 2 Indexador\obj\Debug\Lab 2 Indexador.pdb
