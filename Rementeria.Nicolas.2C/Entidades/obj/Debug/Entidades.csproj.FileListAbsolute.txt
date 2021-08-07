@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Parcial 1 Practica\Rementeria.Nicolas.2C\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Entidades\bin\Debug\Entidades.dll
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Entidades\obj\Debug\Entidades.dll
+C:\Users\Nicolas\Desktop\Parcial-1-Practica-master (NICO)\Parcial-1-Practica-master\Rementeria.Nicolas.2C\Entidades\obj\Debug\Entidades.pdb
