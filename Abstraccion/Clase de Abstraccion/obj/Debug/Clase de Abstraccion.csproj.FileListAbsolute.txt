@@ -1,0 +1,16 @@
+C:\Users\alumno\Desktop\Clase de Abstraccion\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.exe.config
+C:\Users\alumno\Desktop\Clase de Abstraccion\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.exe
+C:\Users\alumno\Desktop\Clase de Abstraccion\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.pdb
+C:\Users\alumno\Desktop\Clase de Abstraccion\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.exe
+C:\Users\alumno\Desktop\Clase de Abstraccion\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.pdb
+C:\Users\alumno\Desktop\Clase de Abstraccion v0\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.exe.config
+C:\Users\alumno\Desktop\Clase de Abstraccion v0\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.exe
+C:\Users\alumno\Desktop\Clase de Abstraccion v0\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.pdb
+C:\Users\alumno\Desktop\Clase de Abstraccion v0\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.exe
+C:\Users\alumno\Desktop\Clase de Abstraccion v0\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.pdb
+C:\Users\alumno\Desktop\Abstraccion\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.exe.config
+C:\Users\alumno\Desktop\Abstraccion\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.exe
+C:\Users\alumno\Desktop\Abstraccion\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.pdb
+C:\Users\alumno\Desktop\Abstraccion\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.exe
+C:\Users\alumno\Desktop\Abstraccion\Abstraccion\Clase de Abstraccion\bin\Debug\Clase de Abstraccion.pdb
+C:\Users\alumno\Desktop\Abstraccion\Abstraccion\Clase de Abstraccion\obj\Debug\Clase de Abstraccion.csprojResolveAssemblyReference.cache
