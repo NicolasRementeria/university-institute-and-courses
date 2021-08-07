@@ -1,9 +1,0 @@
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\bin\Debug\Ferret de Facturacion.exe.config
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\obj\Debug\Ferret de Facturacion.csprojResolveAssemblyReference.cache
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\obj\Debug\Ferret_de_Facturacion.Form1.resources
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\obj\Debug\Ferret_de_Facturacion.Properties.Resources.resources
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\obj\Debug\Ferret de Facturacion.csproj.GenerateResource.Cache
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\bin\Debug\Ferret de Facturacion.exe
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\bin\Debug\Ferret de Facturacion.pdb
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\obj\Debug\Ferret de Facturacion.exe
-C:\Users\alumno\Desktop\Nico C Sharp\Clase 6 (Windows Form)\Clase 6 (Windows Form)\Ferret de Facturacion\obj\Debug\Ferret de Facturacion.pdb
