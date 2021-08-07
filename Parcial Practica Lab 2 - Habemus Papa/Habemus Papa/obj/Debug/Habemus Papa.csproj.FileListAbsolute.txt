@@ -1,7 +1,0 @@
-C:\Users\alumno\Desktop\Clase 13\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\bin\Debug\Habemus Papa.exe.config
-C:\Users\alumno\Desktop\Clase 13\HABEMUS\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\bin\Debug\Habemus Papa.exe.config
-C:\Users\alumno\Desktop\Clase 13\HABEMUS\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\obj\Debug\Habemus Papa.csprojResolveAssemblyReference.cache
-C:\Users\alumno\Desktop\Clase 13\HABEMUS\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\bin\Debug\Habemus Papa.exe
-C:\Users\alumno\Desktop\Clase 13\HABEMUS\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\bin\Debug\Habemus Papa.pdb
-C:\Users\alumno\Desktop\Clase 13\HABEMUS\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\obj\Debug\Habemus Papa.exe
-C:\Users\alumno\Desktop\Clase 13\HABEMUS\Parcial Practica Lab 2 - Habemus Papa\Habemus Papa\obj\Debug\Habemus Papa.pdb
