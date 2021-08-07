@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g3",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}\\output\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:\\MinGW\\bin\\gcc.exe"
+        },
+        {
+            "type": "shell",
+            "label": "Run C Program",
+            "command": "C:\\MinGW\\bin\\gcc.exe -g3 -Wall \"${file}\" -o \"${fileDirname}\\output\\${fileBasenameNoExtension}.exe\" &&\"${fileDirname}\\output\\${fileBasenameNoExtension}.exe\"",
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "compiler: C:\\MinGW\\bin\\gcc.exe"
+        }
+    ]
+}
