@@ -1,0 +1,2 @@
+C:\Users\alumno\Desktop\C Sharp Nico\Clase 3 y 4\bin\Debug\Clase 3 y 4.exe.config
+C:\Users\alumno\Desktop\C Sharp Nico\Clase 3 y 4\obj\Debug\Clase 3, 4 y 5.csprojResolveAssemblyReference.cache
