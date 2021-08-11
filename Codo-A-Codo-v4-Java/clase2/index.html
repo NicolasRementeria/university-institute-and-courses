@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            display: inline;
+            padding: 50px;
+        }
+
+        body {
+            background-color: darkkhaki;
+        }
+
+        h1 {
+            background-color: darkorange;
+            padding: 50px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="width: 80%;">
+        <h1>Mi página web</h1>
+        <ul>
+            <li><a href="#mi_video">Ir a mi video</a></li>
+            <li><a href="#formulario">Ir a mi formulario</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#descarga-pdf">Descarga pdf</a></li>
+        </ul>
+    </div>
+
+    <h1>Juego de la Vida</h3>
+        <img src="img/GameOfLifeCellularAutomaton.png" alt="Juego de la Vida">
+
+        <h2 id="descarga-pdf">Descargar pdf</h2>
+        <a href="pdf/Ejerc_res1_2021.pdf" download="">Aqui para descargad pdf</a>
+
+        <form action="pagina2/index.html" method="GET" id="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+
+            <h3>Tipos de Input</h3>
+            <h4>Radio: Provincias</h3>
+                <label for="radio">Buenos Aires</label>
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Catamarca</label>
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Chubut</label>
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Discworld</label>
+                <input type="radio" name="radio" id="radio">
+
+                <h4>Select: Mi libro favorito</h4>
+                <select>
+                    <option>El señor de los Anillos</option>
+                    <option>Yo Robot</option>
+                    <option>El Color de la Magia</option>
+                    <option>SRE handbook</option>
+                </select>
+
+                <h4>Checkbox: Selecion de hardware</h4>
+                <label for="">Ram 8gb DDR4</label>
+                <input type="checkbox" name="hardware" id="hardware">
+                <label for="">Motherboard ASUS</label>
+                <input type="checkbox" name="hardware" id="hardware">
+                <label for="">GPU RX 570</label>
+                <input type="checkbox" name="hardware" id="hardware">
+                <label for="">SSD 128gb</label>
+                <input type="checkbox" name="hardware" id="hardware">
+
+                <input type="submit" value="Entrar" onclick="alert('Hola')">
+
+        </form>
+
+        <p><b><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b></i> Tempore unde, aliquid nobis mollitia
+            nam nostrum minima non voluptates <span>Estamos en el SPAN</span> nisi, obcaecati excepturi iusto
+        <div>Estamos en DIV</div> cupiditate dignissimos reprehenderit!
+        Voluptas sed iure nostrum enim?</p>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bv4CztgyrcA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen id="mi_video"></iframe>
+
+        <div id="galeria">
+            <img src="https://www.mentesliberadas.com/wp-content/uploads/2012/03/juego-de-la-vida-2.jpg"
+                alt="Juego de la Vida">
+            <img src="https://i.blogs.es/1d6927/vida-20mac-20conway/1366_2000.gif" alt="Juego de la Vida">
+        </div>
+
+</body>
+
+</html>
